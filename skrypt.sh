@@ -1,6 +1,12 @@
 #!/bin/bash
 
-if [[ "$1" == "--date" ]]; then
+if [[ "$1" == "--help" ]]; then
+  echo "Available options:"
+  echo "--date           show current date"
+  echo "--logs [n]       create n log files (default 100)"
+  echo "--help           show this help"
+
+elif [[ "$1" == "--date" ]]; then
   date
 
 elif [[ "$1" == "--logs" ]]; then
